@@ -98,16 +98,18 @@
       </section>
 
       <!-- BENEFITS SECTION -->
-      <section>
+      <section class="benefits-section">
         <div class="container">
-          <h2>benefits</h2>
-          <ul>
+          <h2 class="visibily-hidden">benefits</h2>
+          <ul class="benefits-list">
             <li>
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-chocolate-bar"></use>
-              </svg>
-              <h3>Unsurpassed taste</h3>
-              <p>
+              <div class="benefits-icon-cont">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-title">Unsurpassed taste</h3>
+              <p class="benefits-text margin-fist-child">
                 Crafted with the finest quality cocoa beans and a dedication to
                 perfection, each bite is a decadent experience that simply
                 cannot be matched. Savor the richness and complexity of our
@@ -115,11 +117,13 @@
               </p>
             </li>
             <li>
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-coin"></use>
-              </svg>
-              <h3>Affordable price</h3>
-              <p>
+              <div class="benefits-icon-cont">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-title">Affordable price</h3>
+              <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
                 Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
@@ -128,11 +132,13 @@
               </p>
             </li>
             <li>
-              <svg width="32" height="32">
-                <use href="./images/icons.svg#icon-spoon"></use>
-              </svg>
-              <h3>Own production</h3>
-              <p>
+              <div class="benefits-icon-cont">
+                <svg width="32" height="32" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-title sp">Own production</h3>
+              <p class="benefits-text margin-third-child">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
                 finest ingredients to handcrafting each piece, our attention to
@@ -144,19 +150,23 @@
       </section>
 
       <!-- INGREDIENTS SECTION -->
-      <section>
+      <section class="ingredients-section">
         <div class="container">
-          <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h2>
-          <p>
+          <h2 class="ingredients-title">
+            IT ALL ADDS UP TO ONE EXCEPTIONAL
+            <span class="ingredients-title-taste">TASTE</span> SENSATION
+          </h2>
+          <p class="ingredients-text">
             At Simply Chocolate, we believe that the secret to exceptional
             chocolate is in the details. From the sourcing of the finest
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul>
-            <li>
-              <div>
+          <ul class="ingredients-list">
+            <li class="card">
+              <div class="ingredients-card-front milk-chocolate card-face front">
                 <img
+                  class="ingredients-img"
                   width="224"
                   height="171"
                   srcset="
@@ -166,12 +176,16 @@
                   src="./images/ingredients/milk-chocolate.png"
                   alt="Milk chocolate"
                 />
-                <h3>Milk chocolate</h3>
+                <h3 class="card-list-front-title">Milk chocolate</h3>
               </div>
-              <div>
-                <h3>Milk chocolate</h3>
-                <a href="">chocolate</a><a href="">the benefits</a>
-                <p>
+              <div class="ingredients-card-back card-face back">
+                <h3 class="ingredients-card-title-back">Milk chocolate</h3>
+                <ul class="ingredients-card-back-list">
+                  <li><a href="" class="ingredients-card-back-list-ing">chocolate</a></li>
+                  <li><a href="" class="ingredients-card-back-list-ben">the benefits</a></li>
+                </ul>
+                
+                <p class="ingredients-card-back-text">
                   Milk chocolate is a solid chocolate confectionery containing
                   cocoa, sugar and milk. It is the most consumed type of
                   chocolate. Chocolate was originally sold and consumed as a
@@ -180,9 +194,10 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div>
+            <li class="card">
+              <div class="ingredients-card-front milk card-face front">
                 <img
+                  class="ingredients-img"
                   width="224"
                   height="171"
                   srcset="
@@ -192,12 +207,16 @@
                   src="./images/ingredients/milk.png"
                   alt="Milk"
                 />
-                <h3>Milk</h3>
+                <h3 class="card-list-front-title">Milk</h3>
               </div>
-              <div>
-                <h3>Milk</h3>
-                <a href="">milk </a><a href="">the benefits</a>
-                <p>
+              <div class="ingredients-card-back card-face back">
+                <h3 class="ingredients-card-title-back">Milk</h3>
+                <ul class="ingredients-card-back-list">
+                  <li><a href="" class="ingredients-card-back-list-ing">milk </a></li>
+                  <li><a href="" class="ingredients-card-back-list-ben">the benefits</a></li>
+                </ul>
+                
+                <p class="ingredients-card-back-text">
                   Milk is a white liquid food produced by the mammary glands of
                   mammals. It is the primary source of nutrition for young
                   mammals (including breastfed human infants) before they are
@@ -207,9 +226,10 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div>
+            <li class="card">
+              <div class="ingredients-card-front nuts card-face front">
                 <img
+                  class="ingredients-img"
                   width="224"
                   height="171"
                   srcset="
@@ -219,12 +239,16 @@
                   src="./images/ingredients/nuts.png"
                   alt="Nuts"
                 />
-                <h3>Nuts</h3>
+                <h3 class="card-list-front-title"">Nuts</h3>
               </div>
-              <div>
-                <h3>Nuts</h3>
-                <a href="">nuts</a><a href="">the benefits</a>
-                <p>
+              <div class="ingredients-card-back card-face back">
+                <h3 class="ingredients-card-title-back">Nuts</h3>
+                <ul class="ingredients-card-back-list">
+                  <li><a href="" class="ingredients-card-back-list-ing">nuts</a></li>
+                  <li><a href="" class="ingredients-card-back-list-ben">the benefits</a></li>
+                </ul>
+                
+                <p class="ingredients-card-back-text">
                   Almonds, pistachios, and walnuts are some types of nuts that
                   contain healthy nutrients. When eaten as part of a
                   nutrient-dense diet, these 9 nuts may offer benefits such as
@@ -234,9 +258,12 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div>
+            <li class="card">
+              <div
+                class="ingredients-card-front semi-sweet-chocolate card-face front"
+              >
                 <img
+                  class="ingredients-img"
                   width="224"
                   height="171"
                   srcset="
@@ -246,12 +273,16 @@
                   src="./images/ingredients/semi-sweet-chocolate.png"
                   alt="SEMI - SWEET CHOCOLATE"
                 />
-                <h3>semi - sweet chocolate</h3>
+                <h3 class="card-list-front-title">semi - sweet chocolate</h3>
               </div>
-              <div>
-                <h3>semi - sweet chocolate</h3>
-                <a href="">sweet chocolate</a><a href="">the benefits</a>
-                <p>
+              <div class="ingredients-card-back card-face back">
+                <h3 class="ingredients-card-title-back">semi - sweet chocolate</h3>
+                <ul class="ingredients-card-back-list">
+                  <li><a href="" class="ingredients-card-back-list-ing">sweet chocolate</a></li>
+                  <li><a href="" class="ingredients-card-back-list-ben">the benefits</a></li>
+                </ul>
+                
+                <p class="ingredients-card-back-text">
                   Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
                   One of the best ways to gain an understanding of this type of
                   chocolate is to compare it to a different type of chocolate.
@@ -268,6 +299,7 @@
       <!-- HOW IT'S MADE -->
       <section>
         <div class="container">
+          <h2>hOW IT&#8217;S made?</h2>
           <img
             width="335"
             height="500"
@@ -311,7 +343,7 @@
       <!-- REVIEW -->
       <section>
         <div class="container">
-          <h2>chocolate is loved</h2>
+          <h2>Chocolate is loved</h2>
           <ul>
             <li>
               <img
@@ -402,7 +434,7 @@
           </svg>
         </button>
         <p>leave a review about our chocolate</p>
-        <form name="">
+        <form name="modal-review">
           <div>
             <label for="user-name">Name</label>
             <div>
