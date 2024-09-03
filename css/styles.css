@@ -21,6 +21,9 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+.footer-address {
   font-style: normal;
 }
 
@@ -89,6 +92,12 @@ button {
   background-color: inherit;
   display: flex;
   cursor: pointer;
+}
+
+.header-mobile-btn-icon:hover,
+.header-mobile-btn-icon:focus {
+  width: 32px;
+  height: 32px;
 }
 
 /* HEADER */
@@ -315,7 +324,7 @@ button {
   padding-bottom: 60px;
 }
 
-.ingredients-title {
+.section-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -323,13 +332,16 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+}
+
+.ingredients-section .section-title {
   max-width: 283px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
 }
 
-.ingredients-title-taste {
+.section-title-orange {
   color: #fd9222;
 }
 
@@ -489,5 +501,314 @@ button {
   letter-spacing: -0.02em;
   color: #111;
 }
-
 /*INGREDIENTS SECTION */
+
+/* HOW IT'S MADE */
+.how-its-made-section .section-title {
+  margin-bottom: 32px;
+}
+
+.img-btn-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.how-its-made-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.how-its-made-play-icon {
+  fill: #f5f4f4;
+  transition: fill 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.how-its-made-play-icon:hover,
+.how-its-made-play-icon:focus {
+  fill: #fd9222;
+}
+
+.how-its-made-list-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.how-its-made-list-container {
+  padding: 20px 14px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.how-its-made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.how-its-made-new-marker {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  background-color: #4c4c4c;
+  position: absolute;
+  top: 5px;
+}
+
+.how-its-made-list-item {
+  position: relative;
+}
+
+.how-its-made-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #111;
+  max-width: 307px;
+  padding-left: 16px;
+}
+/* HOW IT'S MADE */
+
+/* REVIEW */
+.review-section .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.review-section .section-title {
+  margin-bottom: 72px;
+}
+
+.review-card-container {
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  padding: 56px 18px 42px 18px;
+}
+
+.review-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.review-card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-card-list {
+  margin-bottom: 20px;
+  height: 240px;
+  overflow: auto;
+}
+
+.review-card-list-item {
+  position: relative;
+}
+
+.review-card-img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-card-slide {
+  max-width: 80px;
+  display: flex;
+  gap: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.review-card-slide-item {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(17, 17, 17, 0.1);
+}
+
+.active-item {
+  width: 28px;
+  height: 13px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fd9222;
+}
+
+.review-btn {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+  cursor: pointer;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  background-color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: background-color 300ms cubic-bezier(0.86, 0, 0.07, 1),
+    color 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  color: #fff;
+  background-color: #fd9222;
+}
+/* REVIEW */
+
+/* FOOTER */
+.page-footer {
+  background-color: #1e1823;
+}
+
+.page-footer .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fd9222;
+  margin-bottom: 32px;
+}
+
+.footer-title-white {
+  color: #fff;
+}
+
+.contacts-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fff;
+  transition: color 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.footer-address {
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.footer-address::after {
+  width: 335px;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  content: '';
+  transform: rotate(-180deg);
+  position: absolute;
+  bottom: -33px;
+}
+
+.footer-nav {
+  margin-bottom: 32px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+  transition: color 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.footer-address-link:hover,
+.footer-nav-link:hover,
+.footer-address-link:focus,
+.footer-nav-link:focus {
+  color: #fd9222;
+}
+
+input {
+  outline: none;
+}
+
+.footer-input {
+  margin-right: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 14px 18px;
+  width: 207px;
+  height: 45px;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-input:focus {
+  border-color: #fd9222;
+}
+
+.footer-submit-btn {
+  background-color: #fd9222;
+  border-radius: 100px;
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  max-width: 120px;
+  transition: background-color 300ms cubic-bezier(0.86, 0, 0.07, 1),
+    color 300ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+/* FOOTER */
