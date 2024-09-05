@@ -24,34 +24,34 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="page-header">
       <div class="container">
         <div class="header-container">
-          <nav>
+          <nav class="header-nav">
             <a href="./index.html" class="header-nav-logo-link"
               >SIMPLY
               <span class="header-nav-logo-link-ch">CHOCOLATE</span>
-              <svg width="21" height="21">
+              <svg width="21" height="21" class="header-nav-icon">
                 <use href="./images/icons.svg#icon-chocolate"></use>
               </svg>
             </a>
-            <ul class="header-nav-list">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="">How it&#8217;s made?</a></li>
-              <li><a href="">Chocolate is loved</a></li>
+            <ul class="menu">
+              <li><a class="menu-link" href="./index.html">Home</a></li>
+              <li><a class="menu-link" href="">How it&#8217;s made?</a></li>
+              <li><a class="menu-link" href="">Chocolate is loved</a></li>
             </ul>
           </nav>
           <ul class="header-sm-list">
             <li>
-              <a href="" target="_blank">
-                <svg width="24" height="24">
+              <a class="header-sm-link" href="" target="_blank">
+                <svg width="24" height="24" class="header-sm-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
-                <svg width="24" height="24">
+              <a class="header-sm-link" href="" target="_blank">
+                <svg width="24" height="24" class="header-sm-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -102,7 +102,7 @@
         <div class="container">
           <h2 class="visually-hidden">benefits</h2>
           <ul class="benefits-list">
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-cont">
                 <svg width="32" height="32" class="benefits-icon">
                   <use href="./images/icons.svg#icon-chocolate-bar"></use>
@@ -116,7 +116,7 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-cont">
                 <svg width="32" height="32" class="benefits-icon">
                   <use href="./images/icons.svg#icon-coin"></use>
@@ -131,7 +131,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="benefits-list-item">
               <div class="benefits-icon-cont">
                 <svg width="32" height="32" class="benefits-icon">
                   <use href="./images/icons.svg#icon-spoon"></use>
@@ -331,67 +331,60 @@
       <!-- HOW IT'S MADE -->
       <section class="how-its-made-section">
         <div class="container">
-          <h2 class="section-title">
-            hOW IT&#8217;S <span class="section-title-orange">made?</span>
-          </h2>
-          <div class="img-btn-container">
-            <img
-              width="335"
-              height="500"
-              srcset="
-                ./images/how-its-made/how-its-made@2x.png 2x,
-                ./images/how-its-made/how-its-made.png    1x
-              "
-              src="./images/how-its-made/how-its-made.png"
-              alt="Making chocolate"
-            />
-            <button type="button" class="how-its-made-play-btn">
-              <svg width="35" height="35" class="how-its-made-play-icon">
-                <use href="./images/icons.svg#icon-play2"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="how-its-made-list-container">
-            <h3 class="how-its-made-list-title">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </h3>
-            <ul class="how-its-made-list">
-              <li class="how-its-made-list-item">
-                <span class="how-its-made-new-marker"></span>
-                <p class="how-its-made-list-text">
-                  Heat the milk in a saucepan without bringing it to a boil. Add
-                  sugar and cocoa powder.
-                </p>
-              </li>
-              <li class="how-its-made-list-item">
-                <span class="how-its-made-new-marker"></span>
-                <p class="how-its-made-list-text">
-                  At the same time, prepare a water bath. Melt the butter on it.
-                </p>
-              </li>
-              <li class="how-its-made-list-item">
-                <span class="how-its-made-new-marker"></span>
-                <p class="how-its-made-list-text">
-                  "Mix" the milk mixture and already liquid butter. Mix
-                  thoroughly with a silicone spatula so that the mass becomes
-                  uniform and silky.
-                </p>
-              </li>
-              <li class="how-its-made-list-item">
-                <span class="how-its-made-new-marker"></span>
-                <p class="how-its-made-list-text">
-                  Heat the mixture over low heat, letting it barely boil.
-                </p>
-              </li>
-              <li class="how-its-made-list-item">
-                <span class="how-its-made-new-marker"></span>
-                <p class="how-its-made-list-text">
-                  Pour the chocolate into special containers (can be replaced
-                  with ice molds). Allow to cool and harden.
-                </p>
-              </li>
-            </ul>
+          <div class="how-made-cont">
+            <h2 class="section-title">
+              hOW IT&#8217;S <span class="section-title-orange">made?</span>
+            </h2>
+            <div class="img-btn-container">
+              <button type="button" class="how-its-made-play-btn">
+                <svg width="35" height="35" class="how-its-made-play-icon">
+                  <use href="./images/icons.svg#icon-play2"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="how-its-made-list-container">
+              <h3 class="how-its-made-list-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="how-its-made-list">
+                <li class="how-its-made-list-item">
+                  <span class="how-its-made-new-marker"></span>
+                  <p class="how-its-made-list-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="how-its-made-list-item">
+                  <span class="how-its-made-new-marker"></span>
+                  <p class="how-its-made-list-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="how-its-made-list-item">
+                  <span class="how-its-made-new-marker"></span>
+                  <p class="how-its-made-list-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="how-its-made-list-item">
+                  <span class="how-its-made-new-marker"></span>
+                  <p class="how-its-made-list-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="how-its-made-list-item">
+                  <span class="how-its-made-new-marker"></span>
+                  <p class="how-its-made-list-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -467,44 +460,62 @@
     <!-- FOOTER -->
     <footer id="footer" class="page-footer">
       <div class="container">
-        <h2 class="footer-title">
-          Chocolate<span class="footer-title-white">
-            a delicious cure for a bad day</span
-          >
-        </h2>
-        <p class="contacts-text">Contact us</p>
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li>
-              <a href="tel:+380684439426" class="footer-address-link"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li>
-              <a href="mailto:simplychoc@gmail.com" class="footer-address-link"
-                >simplychoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li><a href="./index.html" class="footer-nav-link">Home</a></li>
-            <li><a href="" class="footer-nav-link">How it&#8217;s made?</a></li>
-            <li><a href="" class="footer-nav-link">Our products</a></li>
-            <li><a href="" class="footer-nav-link">Top sellers</a></li>
-            <li><a href="" class="footer-nav-link">Chocolate is loved</a></li>
-          </ul>
-        </nav>
-        <form name="chocolate-review-footer-form">
-          <input
-            class="footer-input"
-            type="email"
-            name="chocolate-review"
-            placeholder="Enter your email"
-            required
-          /><button type="submit" class="footer-submit-btn">Subscribe</button>
-        </form>
+        <div class="footer-title-contacts-cont">
+          <h2 class="footer-title">
+            Chocolate<span class="footer-title-white">
+              a delicious cure for a bad day</span
+            >
+          </h2>
+          <div class="footer-contacts-cont">
+            <p class="contacts-text">Contact us</p>
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li>
+                  <a href="tel:+380684439426" class="footer-address-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:simplychoc@gmail.com"
+                    class="footer-address-link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="footer-nav-form-cont">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="./index.html" class="footer-nav-link">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">How it&#8217;s made?</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link">Chocolate is loved</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link only-mobile">Our products</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="" class="footer-nav-link only-mobile">Top sellers</a>
+              </li>
+            </ul>
+          </nav>
+          <form name="chocolate-review-footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              name="chocolate-review"
+              placeholder="Enter your email"
+              required
+            /><button type="submit" class="footer-submit-btn">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
 
