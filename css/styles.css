@@ -367,6 +367,7 @@ textarea {
 .milk,
 .semi-sweet-chocolate {
   border: 1px solid #fd9222;
+  background-color: #ffffff;
 }
 
 .nuts {
@@ -1665,10 +1666,6 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
     overflow: auto;
   }
 
-  .milk,
-  .semi-sweet-chocolate {
-    background-color: #ffffff;
-  }
   /*===================== /DEKTOP INGREDIENTS =====================*/
 
   /*===================== DESKTOP HOW IT'S MADE =====================*/
