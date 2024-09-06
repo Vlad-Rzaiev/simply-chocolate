@@ -786,6 +786,10 @@ textarea {
   color: #fd9222;
 }
 
+.footer-form {
+  display: flex;
+}
+
 .footer-input {
   margin-right: 8px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
