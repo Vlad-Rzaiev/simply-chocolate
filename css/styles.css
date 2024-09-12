@@ -56,6 +56,20 @@ input,
 textarea {
   outline: none;
 }
+
+.sections-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
 /*========================= /COMMON STYLES ===================*/
 
 /*=========================== HEADER ========================*/
@@ -82,7 +96,7 @@ textarea {
   display: flex;
   align-items: center;
   padding-top: 25px;
-  padding-bottom: 19px;
+  padding-bottom: 25px;
 }
 
 .header-nav-logo-link-ch {
@@ -319,22 +333,8 @@ textarea {
 /*======================== /BENEFITS SECTION ===================*/
 
 /*==================== INGREDIENTS SECTION ====================*/
-.sections-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .ingredients-section .container {
   padding-top: 30px;
-}
-
-.section-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .ingredients-section .section-title {
@@ -399,7 +399,7 @@ textarea {
 }
 
 .milk-chocolate .card-list-front-title,
-.nuts .card-list-front-title {
+.nuts {
   color: #fff;
 }
 
@@ -1167,10 +1167,6 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
     gap: 101px;
   }
 
-  .header-nav-logo-link {
-    padding: 0;
-  }
-
   .menu-link {
     font-size: 14px;
     font-weight: 500;
@@ -1313,6 +1309,22 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
 
   .card {
     flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .card:nth-child(1) {
+    order: 1;
+  }
+
+  .card:nth-child(2) {
+    order: 3;
+  }
+
+  .card:nth-child(3) {
+    order: 4;
+  }
+
+  .card:nth-child(4) {
+    order: 2;
   }
 
   .ingredients-section .container {
@@ -1644,6 +1656,22 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
 
   .card {
     flex-basis: calc((100% - 57px) / 4);
+  }
+
+  .card:nth-child(1) {
+    order: 1;
+  }
+
+  .card:nth-child(2) {
+    order: 2;
+  }
+
+  .card:nth-child(3) {
+    order: 3;
+  }
+
+  .card:nth-child(4) {
+    order: 4;
   }
 
   .ingredients-card-front {
