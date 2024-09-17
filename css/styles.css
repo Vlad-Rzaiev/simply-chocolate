@@ -1379,6 +1379,7 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   .how-its-made-list-text {
     max-width: 470px;
     line-height: 1.28;
+    max-width: 464px;
   }
   /*================ /TABLET HOW IT'S MADE SECTION ================*/
 
@@ -1750,6 +1751,10 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
 
   .how-its-made-list {
     gap: 24px;
+  }
+
+  .how-its-made-list-text {
+    max-width: 409px;
   }
   /*===================== /DESKTOP HOW IT'S MADE =====================*/
 
