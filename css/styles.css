@@ -107,7 +107,6 @@ textarea {
 
 .header-nav-logo-link-ch {
   font-style: normal;
-  margin-left: 2px;
   margin-right: 4px;
 }
 
@@ -1195,6 +1194,11 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
     gap: 18px;
   }
 
+  .header-sm-link {
+    display: block;
+    line-height: 0;
+  }
+
   .header-sm-icon {
     fill: #111;
     transition: fill 300ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -1534,10 +1538,6 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   .checkbox-text {
     flex-direction: row;
     font-size: 14px;
-  }
-
-  .checkbox-link {
-    margin-left: 4px;
   }
 
   .modal-form-checkbox-cont {
