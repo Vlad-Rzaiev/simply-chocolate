@@ -89,8 +89,18 @@ textarea {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 62px;
+  }
+}
+
+.header-nav {
+  flex-grow: 1;
 }
 
 .header-nav-logo-link {
@@ -101,8 +111,8 @@ textarea {
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
 }
 
 .header-nav-logo-link-ch {
@@ -1159,6 +1169,10 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   /*=================== /TABLET COMMON STYLES ===================*/
 
   /*=================== TABLET HEADER STYLES ===================*/
+  .header-container {
+    gap: 48px;
+  }
+
   .header-mobile-btn {
     display: none;
   }
@@ -1171,7 +1185,7 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   .header-nav {
     display: flex;
     align-items: center;
-    gap: 101px;
+    justify-content: space-between;
   }
 
   .menu-link {
@@ -1197,15 +1211,12 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   .header-sm-link {
     display: block;
     line-height: 0;
-  }
-
-  .header-sm-icon {
     fill: #111;
     transition: fill 300ms cubic-bezier(0.86, 0, 0.07, 1);
   }
 
-  .header-sm-link:hover .header-sm-icon,
-  .header-sm-link:focus .header-sm-icon {
+  .header-sm-link:hover,
+  .header-sm-link:focus {
     fill: #fd9222;
   }
   /*=================== /TABLET HEADER STYLES ===================*/
@@ -1566,6 +1577,10 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   /*=================== /DESKTOP COMMON STYLES ===================*/
 
   /*=================== DESKTOP HEADER STYLES ===================*/
+  .header-container {
+    gap: 90px;
+  }
+
   .header-nav-logo-link {
     font-size: 18px;
     line-height: 1.11;
@@ -1574,10 +1589,6 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
   .header-nav-icon {
     width: 24px;
     height: 24px;
-  }
-
-  .header-nav {
-    gap: 447px;
   }
 
   .header-sm-list {
