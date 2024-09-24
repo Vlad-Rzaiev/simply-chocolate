@@ -1025,7 +1025,7 @@ textarea {
   padding-left: 32px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.3;
+  line-height: 0.6;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
 }
@@ -1546,9 +1546,16 @@ input[type='checkbox']:checked + .checkbox-text .new-checkbox {
     font-size: 18px;
   }
 
+  .new-checkbox {
+    position: static;
+    margin-right: 12px;
+  }
+
   .checkbox-text {
     flex-direction: row;
+    align-items: center;
     font-size: 14px;
+    padding-left: 0;
   }
 
   .modal-form-checkbox-cont {

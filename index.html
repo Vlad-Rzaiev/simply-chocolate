@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
 
-    <script src="./js.js" defer></script>
+    <script src="./js/js.js" defer></script>
 
     <link
       rel="stylesheet"
@@ -63,7 +63,7 @@
           </li>
         </ul>
 
-        <button type="button" class="header-mobile-btn">
+        <button type="button" class="header-mobile-btn" data-menu-open>
           <svg width="28" height="28" class="header-mobile-btn-icon">
             <use href="./images/icons.svg#icon-phone-menu"></use>
           </svg>
@@ -453,7 +453,9 @@
             <li><div class="review-card-slide-item"></div></li>
             <li><div class="review-card-slide-item"></div></li>
           </ul>
-          <button type="button" class="review-btn">Leave a review</button>
+          <button type="button" class="review-btn" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -522,9 +524,9 @@
     </footer>
 
     <!-- MODAL-REVIEW -->
-    <div class="modal-review-overlay">
+    <div class="modal-review-overlay" data-modal>
       <div class="modal-review-main-window">
-        <button type="button" class="close-review-window-btn">
+        <button type="button" class="close-review-window-btn" data-modal-close>
           <svg width="14" height="14" class="close-review-window-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -618,9 +620,13 @@
     </div>
 
     <!-- MODAL PHONE MENU -->
-    <div class="phone-olerlay">
+    <div class="phone-olerlay" data-menu>
       <div class="phone-modal-window">
-        <button type="button" class="modal-phone-menu-close-btn">
+        <button
+          type="button"
+          class="modal-phone-menu-close-btn"
+          data-menu-close
+        >
           <svg width="18" height="18" class="modal-phone-menu-close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -662,5 +668,11 @@
         </ul>
       </div>
     </div>
+
+    <!-- MODAL REVIEW -->
+    <script src="./js/modal.js" type="module"></script>
+
+    <!-- MODAL PHONE MENU -->
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
