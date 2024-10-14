@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
 
-    <script src="./js/js.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
 
     <link
       rel="stylesheet"
@@ -20,6 +33,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -396,63 +414,55 @@
           <h2 class="section-title">
             <span class="section-title-orange">Chocolate</span> is loved
           </h2>
-          <ul class="review-card-list">
-            <li class="review-card-list-item">
-              <img
-                class="review-card-img"
-                width="80"
-                height="80"
-                src="./images/review/victoria-dobrzhanska.png"
-                alt="Victoria Dobrzhanska avatar"
-              />
-              <div class="review-card-container">
-                <h3 class="review-card-title">Victoria Dobrzhanska</h3>
-                <p class="review-card-text">
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  width="80"
+                  height="80"
+                  src="./images/review/victoria-dobrzhanska.png"
+                  alt="Victoria Dobrzhanska avatar"
+                />
+                <h3 class="swiper-slide-title">Victoria Dobrzhanska</h3>
+                <p class="swiper-slide-text">
                   I love this chocolate bar. Perfect combination of light crispy
                   wafer, covered in a thin layer chocolate.
                 </p>
-              </div>
-            </li>
-            <li class="review-card-list-item">
-              <img
-                class="review-card-img"
-                width="80"
-                height="80"
-                src="./images/review/nazar-babenko.png"
-                alt="Nazar Babenko avatar"
-              />
-              <div class="review-card-container">
-                <h3 class="review-card-title">Nazar Babenko</h3>
-                <p class="review-card-text">
+              </li>
+              <li class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  width="80"
+                  height="80"
+                  src="./images/review/nazar-babenko.png"
+                  alt="Nazar Babenko avatar"
+                />
+                <h3 class="swiper-slide-title">Nazar Babenko</h3>
+                <p class="swiper-slide-text">
                   This chocolate confection is a delight! A delight! The wafer
                   is light and crisp, the hazelnut cream is smooth, and the
                   chocolate is good.
                 </p>
-              </div>
-            </li>
-            <li class="review-card-list-item">
-              <img
-                class="review-card-img"
-                width="80"
-                height="80"
-                src="./images/review/olena-kampusch.png"
-                alt="Olena Kampusch avatar"
-              />
-              <div class="review-card-container">
-                <h3 class="review-card-title">Olena Kampusch</h3>
-                <p class="review-card-text">
+              </li>
+              <li class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  width="80"
+                  height="80"
+                  src="./images/review/olena-kampusch.png"
+                  alt="Olena Kampusch avatar"
+                />
+                <h3 class="swiper-slide-title">Olena Kampusch</h3>
+                <p class="swiper-slide-text">
                   Chocolate is a family favourite treat. Love the delicious
                   smooth chocolate and the creaminess inside. The wafer is soft
                   but crunchy.
                 </p>
-              </div>
-            </li>
-          </ul>
-          <ul class="review-card-slide">
-            <li><div class="review-card-slide-item active-item"></div></li>
-            <li><div class="review-card-slide-item"></div></li>
-            <li><div class="review-card-slide-item"></div></li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+
           <button type="button" class="review-btn" data-modal-open>
             Leave a review
           </button>
@@ -669,10 +679,14 @@
       </div>
     </div>
 
-    <!-- MODAL REVIEW -->
+    <!-- MODAL REVIEW SCRIPT -->
     <script src="./js/modal.js" type="module"></script>
 
-    <!-- MODAL PHONE MENU -->
+    <!-- MODAL PHONE MENU SCRIPT -->
     <script src="./js/menu.js" type="module"></script>
+
+    <!-- SLIDER SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js" type="module"></script>
   </body>
 </html>
